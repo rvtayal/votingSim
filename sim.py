@@ -90,8 +90,8 @@ def load_2016():
     candidates = [None] * 2
     candidates[0] = Candidate("Trump")
     candidates[1] = Candidate("Clinton")
-    candidates[0].bounds = [-8, -0.5]
-    candidates[1].bounds = [-0.25, 3]
+    candidates[0].bounds = [0.5, 8]
+    candidates[1].bounds = [-3, -0.1]
     candidates[0].reset_pos()
     candidates[1].reset_pos()
 
