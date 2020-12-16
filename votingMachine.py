@@ -13,7 +13,7 @@ class VotingMachine:
 
     def tally(self, ballot):
         self.ballots.append(ballot)
-        if len(ballot) == 0:
+        if ballot is None or len(ballot) == 0:
             return
         if self.method == "traditional":
             self.tallyTraditional(ballot)
